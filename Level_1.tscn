@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bo3wtpbq7yb1w" path="res://Scenes/RockA.tscn" id="1_65pcf"]
 [ext_resource type="PackedScene" uid="uid://c3pqnhq0mm5bb" path="res://Player.tscn" id="1_n0r7v"]
 [ext_resource type="PackedScene" uid="uid://gh5hn8bk38nr" path="res://Scenes/RockB.tscn" id="2_a0j4s"]
+[ext_resource type="PackedScene" uid="uid://dn3m02xfqd80f" path="res://Scenes/fishy.tscn" id="4_a0j4s"]
 
 [node name="Main" type="Node2D" unique_id=2090730078]
 
@@ -10,7 +11,10 @@
 position = Vector2(915, 422)
 
 [node name="RockB" parent="." unique_id=578332930 instance=ExtResource("2_a0j4s")]
-position = Vector2(148, 470)
+position = Vector2(138, 476)
 
 [node name="Player" parent="." unique_id=130884428 instance=ExtResource("1_n0r7v")]
 position = Vector2(579, 324)
+
+[node name="Fishy" parent="." unique_id=1105711345 instance=ExtResource("4_a0j4s")]
+position = Vector2(324, 178)
