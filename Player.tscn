@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://c3pqnhq0mm5bb"]
+
+[ext_resource type="Script" uid="uid://cgsyr7b40nkqf" path="res://player.gd" id="1_kpjcp"]
+[ext_resource type="Texture2D" uid="uid://wthbnwx2ebib" path="res://Sprites/Baubled CharacterSprite.png" id="1_xhfnw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wuq7w"]
+radius = 27.018513
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=130884428]
+script = ExtResource("1_kpjcp")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2077623427]
+scale = Vector2(0.095849596, 0.09052735)
+texture = ExtResource("1_xhfnw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1534005679]
+shape = SubResource("CircleShape2D_wuq7w")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=795479119]

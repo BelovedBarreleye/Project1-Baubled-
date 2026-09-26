@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://gh5hn8bk38nr"]
+
+[ext_resource type="Texture2D" uid="uid://couofgfwm481n" path="res://Sprites/Baubled RockB.png" id="1_klcki"]
+
+[node name="RockB" type="StaticBody2D" unique_id=578332930]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=426466996]
+texture = ExtResource("1_klcki")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=740662796]
+polygon = PackedVector2Array(10, -236, -214, -200, -171, 154, 42, 277, 249, 156, 247, 40, 138, -49)
