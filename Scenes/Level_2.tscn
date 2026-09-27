@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://byvdhhrdk5d0h"]
+
+[ext_resource type="PackedScene" uid="uid://c3pqnhq0mm5bb" path="res://Scenes/Player.tscn" id="1_vgr4u"]
+[ext_resource type="PackedScene" uid="uid://dn3m02xfqd80f" path="res://Scenes/fishy.tscn" id="2_ostk4"]
+
+[node name="Level_2" type="Node2D" unique_id=1024473918]
+
+[node name="Player" parent="." unique_id=130884428 instance=ExtResource("1_vgr4u")]
+position = Vector2(573, 623)
+
+[node name="Fishy" parent="." unique_id=1105711345 instance=ExtResource("2_ostk4")]
+position = Vector2(279, 90)
+
+[node name="Fishy2" parent="." unique_id=1161475613 instance=ExtResource("2_ostk4")]
+position = Vector2(866, 90)
+
+[node name="Fishy3" parent="." unique_id=845553978 instance=ExtResource("2_ostk4")]
+position = Vector2(115, 340)
+
+[node name="Fishy4" parent="." unique_id=1060257018 instance=ExtResource("2_ostk4")]
+position = Vector2(985, 332)
+
+[node name="Fishy5" parent="." unique_id=757593668 instance=ExtResource("2_ostk4")]
+position = Vector2(555, 286)

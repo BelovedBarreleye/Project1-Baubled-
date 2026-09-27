@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://5s7ywkxhoshq"]
+
+[ext_resource type="PackedScene" uid="uid://bo3wtpbq7yb1w" path="res://Scenes/RockA.tscn" id="1_nw7js"]
+[ext_resource type="PackedScene" uid="uid://gh5hn8bk38nr" path="res://Scenes/RockB.tscn" id="2_nh7xm"]
+[ext_resource type="PackedScene" uid="uid://c3pqnhq0mm5bb" path="res://Scenes/Player.tscn" id="3_j0k67"]
+[ext_resource type="PackedScene" uid="uid://dn3m02xfqd80f" path="res://Scenes/fishy.tscn" id="4_5r5j8"]
+
+[node name="Main" type="Node2D" unique_id=2090730078]
+
+[node name="RockA" parent="." unique_id=1068318349 instance=ExtResource("1_nw7js")]
+position = Vector2(915, 422)
+
+[node name="RockB" parent="." unique_id=578332930 instance=ExtResource("2_nh7xm")]
+position = Vector2(138, 476)
+
+[node name="Player" parent="." unique_id=130884428 instance=ExtResource("3_j0k67")]
+position = Vector2(571, 324)
+
+[node name="Fishy" parent="." unique_id=1105711345 instance=ExtResource("4_5r5j8")]
+position = Vector2(178, 87)
+
+[node name="Fishy5" parent="." unique_id=1757489225 instance=ExtResource("4_5r5j8")]
+position = Vector2(511, 83)
+
+[node name="Fishy2" parent="." unique_id=1199758264 instance=ExtResource("4_5r5j8")]
+position = Vector2(248, 268)
+
+[node name="Fishy3" parent="." unique_id=1986261546 instance=ExtResource("4_5r5j8")]
+position = Vector2(686, 92)
+
+[node name="Fishy4" parent="." unique_id=1411153776 instance=ExtResource("4_5r5j8")]
+position = Vector2(448, 196)
+
+[connection signal="body_entered" from="Fishy" to="Player" method="_on_fishy_body_entered"]
+[connection signal="body_entered" from="Fishy5" to="Player" method="_on_fishy_body_entered"]
+[connection signal="body_entered" from="Fishy2" to="Player" method="_on_fishy_2_body_entered"]
+[connection signal="body_entered" from="Fishy3" to="Player" method="_on_fishy_3_body_entered"]
+[connection signal="body_entered" from="Fishy4" to="Player" method="_on_fishy_4_body_entered"]
