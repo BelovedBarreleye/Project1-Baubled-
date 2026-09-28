@@ -1,24 +1,47 @@
 [gd_scene format=3 uid="uid://byvdhhrdk5d0h"]
 
+[ext_resource type="Texture2D" uid="uid://c33lxtig0l8uv" path="res://Background/Mermay underwater back.png" id="1_2g134"]
 [ext_resource type="PackedScene" uid="uid://c3pqnhq0mm5bb" path="res://Scenes/Player.tscn" id="1_vgr4u"]
 [ext_resource type="PackedScene" uid="uid://dn3m02xfqd80f" path="res://Scenes/fishy.tscn" id="2_ostk4"]
+[ext_resource type="Script" uid="uid://dow3xmascc4q8" path="res://Scenes/fishyMovin.gd" id="3_ostk4"]
+[ext_resource type="PackedScene" uid="uid://bo3wtpbq7yb1w" path="res://Scenes/RockA.tscn" id="4_wn4i5"]
+[ext_resource type="PackedScene" uid="uid://gh5hn8bk38nr" path="res://Scenes/RockB.tscn" id="5_2g134"]
 
 [node name="Level_2" type="Node2D" unique_id=1024473918]
 
+[node name="MermayUnderwaterBack" type="Sprite2D" parent="." unique_id=752130432]
+position = Vector2(581, -319)
+scale = Vector2(1.7833334, 1.5503703)
+texture = ExtResource("1_2g134")
+
 [node name="Player" parent="." unique_id=130884428 instance=ExtResource("1_vgr4u")]
-position = Vector2(573, 623)
+position = Vector2(581, 326)
 
 [node name="Fishy" parent="." unique_id=1105711345 instance=ExtResource("2_ostk4")]
-position = Vector2(279, 90)
+position = Vector2(110, 514)
+script = ExtResource("3_ostk4")
+move_direction = Vector2(0, -100)
 
-[node name="Fishy2" parent="." unique_id=1161475613 instance=ExtResource("2_ostk4")]
-position = Vector2(866, 90)
+[node name="Fishy2" parent="." unique_id=829271369 instance=ExtResource("2_ostk4")]
+position = Vector2(1089, 382)
+script = ExtResource("3_ostk4")
 
-[node name="Fishy3" parent="." unique_id=845553978 instance=ExtResource("2_ostk4")]
-position = Vector2(115, 340)
+[node name="Fishy4" parent="." unique_id=1291079258 instance=ExtResource("2_ostk4")]
+position = Vector2(50, 249)
+script = ExtResource("3_ostk4")
 
-[node name="Fishy4" parent="." unique_id=1060257018 instance=ExtResource("2_ostk4")]
-position = Vector2(985, 332)
+[node name="Fishy5" parent="." unique_id=1291050526 instance=ExtResource("2_ostk4")]
+position = Vector2(313, 119)
+script = ExtResource("3_ostk4")
+move_direction = Vector2(0, 50)
 
-[node name="Fishy5" parent="." unique_id=757593668 instance=ExtResource("2_ostk4")]
-position = Vector2(555, 286)
+[node name="Fishy3" parent="." unique_id=368292507 instance=ExtResource("2_ostk4")]
+position = Vector2(1094, 50)
+script = ExtResource("3_ostk4")
+move_direction = Vector2(0, -100)
+
+[node name="RockA" parent="." unique_id=1068318349 instance=ExtResource("4_wn4i5")]
+position = Vector2(800, 459)
+
+[node name="RockB" parent="." unique_id=578332930 instance=ExtResource("5_2g134")]
+position = Vector2(406, 479)
